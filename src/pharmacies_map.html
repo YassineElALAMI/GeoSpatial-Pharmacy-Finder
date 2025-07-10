@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36e5229f316fe64c2b7fc3e2111c7f78 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36e5229f316fe64c2b7fc3e2111c7f78" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36e5229f316fe64c2b7fc3e2111c7f78 = L.map(
+                "map_36e5229f316fe64c2b7fc3e2111c7f78",
+                {
+                    center: [34.03490160825201, -4.9764940779744435],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_14e4809ca5f99ca553c6adf42d9d259b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_14e4809ca5f99ca553c6adf42d9d259b.addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var marker_d0aeae08c36fc814e21833710e232f0a = L.marker(
+                [34.03490160825201, -4.9764940779744435],
+                {
+}
+            ).addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var icon_04b14b2abc8175e712449d845e194df9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cc6f8cdf801141ced401969785f741e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2939ddc8c9b0b8859bdeb9d036c3be44 = $(`<div id="html_2939ddc8c9b0b8859bdeb9d036c3be44" style="width: 100.0%; height: 100.0%;"><b>Votre Position</b><br>Fès, Maroc (position fixe)</div>`)[0];
+                popup_6cc6f8cdf801141ced401969785f741e.setContent(html_2939ddc8c9b0b8859bdeb9d036c3be44);
+            
+        
+
+        marker_d0aeae08c36fc814e21833710e232f0a.bindPopup(popup_6cc6f8cdf801141ced401969785f741e)
+        ;
+
+        
+    
+    
+            marker_d0aeae08c36fc814e21833710e232f0a.bindTooltip(
+                `<div>
+                     Vous êtes ici
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0aeae08c36fc814e21833710e232f0a.setIcon(icon_04b14b2abc8175e712449d845e194df9);
+            
+    
+            var marker_34a465207ea5b1a16b5879e15b5e362c = L.marker(
+                [34.0293711, -4.9818124],
+                {
+}
+            ).addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var icon_dda6afc85a5af6f207f2224d876530f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b38f8c2b0280990801fc53802a26bf30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25cc06047643b24f83d495ad766e26eb = $(`<div id="html_25cc06047643b24f83d495ad766e26eb" style="width: 100.0%; height: 100.0%;">             <b>Pharmacie Youssra صيدلية يسرى</b><br>             📍 Distance: 0.79 km<br>             🚶 Temps de marche: 9 min<br>             📍 Pharmacie Youssra صيدلية يسرى, Avenue Ibn Al Haytam, Quartier Industriel Sidi Brahim, Arrondissement...             </div>`)[0];
+                popup_b38f8c2b0280990801fc53802a26bf30.setContent(html_25cc06047643b24f83d495ad766e26eb);
+            
+        
+
+        marker_34a465207ea5b1a16b5879e15b5e362c.bindPopup(popup_b38f8c2b0280990801fc53802a26bf30)
+        ;
+
+        
+    
+    
+            marker_34a465207ea5b1a16b5879e15b5e362c.bindTooltip(
+                `<div>
+                     1. Pharmacie Youssra صيدلية يسرى
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34a465207ea5b1a16b5879e15b5e362c.setIcon(icon_dda6afc85a5af6f207f2224d876530f0);
+            
+    
+            var poly_line_943e2e276a1824ce40d303b1cf3d7d49 = L.polyline(
+                [[34.03490160825201, -4.9764940779744435], [34.0293711, -4.9818124]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var marker_cb227f2694685d0528e56d2fa4a8618a = L.marker(
+                [34.033483, -4.9859151],
+                {
+}
+            ).addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var icon_718917ed37e97ecbe48c67385a4d2081 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_186ead68d66535eee12c447463447337 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_448daf5b9ebaf5b6f99ac193720abb5a = $(`<div id="html_448daf5b9ebaf5b6f99ac193720abb5a" style="width: 100.0%; height: 100.0%;">             <b>Pharmacie de l'Université صيدلية الجامعة</b><br>             📍 Distance: 0.88 km<br>             🚶 Temps de marche: 10 min<br>             📍 Pharmacie de l'Université صيدلية الجامعة, Avenue Ibn Khatib زنقة شفشاون, Sidi Brahim, Arrondissement...             </div>`)[0];
+                popup_186ead68d66535eee12c447463447337.setContent(html_448daf5b9ebaf5b6f99ac193720abb5a);
+            
+        
+
+        marker_cb227f2694685d0528e56d2fa4a8618a.bindPopup(popup_186ead68d66535eee12c447463447337)
+        ;
+
+        
+    
+    
+            marker_cb227f2694685d0528e56d2fa4a8618a.bindTooltip(
+                `<div>
+                     2. Pharmacie de l'Université صيدلية الجامعة
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb227f2694685d0528e56d2fa4a8618a.setIcon(icon_718917ed37e97ecbe48c67385a4d2081);
+            
+    
+            var marker_4bc84a5ec436c49d026ff868dfcd0efd = L.marker(
+                [34.0269793, -4.9880236],
+                {
+}
+            ).addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var icon_4315d5f7c183776b2b60d9c17cf2f739 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc59360d94ef41445dc1eb3d54abf684 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd6a8255962ee59f838631d40b52dc83 = $(`<div id="html_dd6a8255962ee59f838631d40b52dc83" style="width: 100.0%; height: 100.0%;">             <b>Pharmacie Marhaba صيدلية مرحبا</b><br>             📍 Distance: 1.38 km<br>             🚶 Temps de marche: 16 min<br>             📍 Pharmacie Marhaba صيدلية مرحبا, Avenue Ouahrane, Sidi Brahim, Arrondissement d'Agdal مقاطعة أكدال, F...             </div>`)[0];
+                popup_bc59360d94ef41445dc1eb3d54abf684.setContent(html_dd6a8255962ee59f838631d40b52dc83);
+            
+        
+
+        marker_4bc84a5ec436c49d026ff868dfcd0efd.bindPopup(popup_bc59360d94ef41445dc1eb3d54abf684)
+        ;
+
+        
+    
+    
+            marker_4bc84a5ec436c49d026ff868dfcd0efd.bindTooltip(
+                `<div>
+                     3. Pharmacie Marhaba صيدلية مرحبا
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4bc84a5ec436c49d026ff868dfcd0efd.setIcon(icon_4315d5f7c183776b2b60d9c17cf2f739);
+            
+    
+            var marker_338533527426609f2ae6b5084f74ed66 = L.marker(
+                [34.0413437, -4.986712],
+                {
+}
+            ).addTo(map_36e5229f316fe64c2b7fc3e2111c7f78);
+        
+    
+            var icon_952a51326f5fd24acb4b6bc2a052e40d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54cdb970491e278bf9b586fe637670fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_278a58ba699238cc1142fcbdc7cd498c = $(`<div id="html_278a58ba699238cc1142fcbdc7cd498c" style="width: 100.0%; height: 100.0%;">             <b>Pharmacie Bab Alghoul صيدلية باب الغول</b><br>             📍 Distance: 1.18 km<br>             🚶 Temps de marche: 14 min<br>             📍 Pharmacie Bab Alghoul صيدلية باب الغول, Avenue Mohamed Ben Arbi Alaoui شارع محمد السلاوي, Agdal ⴰⴳⴷⴰ...             </div>`)[0];
+                popup_54cdb970491e278bf9b586fe637670fc.setContent(html_278a58ba699238cc1142fcbdc7cd498c);
+            
+        
+
+        marker_338533527426609f2ae6b5084f74ed66.bindPopup(popup_54cdb970491e278bf9b586fe637670fc)
+        ;
+
+        
+    
+    
+            marker_338533527426609f2ae6b5084f74ed66.bindTooltip(
+                `<div>
+                     4. Pharmacie Bab Alghoul صيدلية باب الغول
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_338533527426609f2ae6b5084f74ed66.setIcon(icon_952a51326f5fd24acb4b6bc2a052e40d);
+            
+</script>
+</html>

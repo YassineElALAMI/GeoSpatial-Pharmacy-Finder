@@ -1,0 +1,28 @@
+# Core dependencies
+osmnx>=1.6.0,<2.0.0  # For OSM data extraction and graph operations
+pandas>=2.0.3,<3.0.0  # Data manipulation and analysis
+shapely>=2.0.1,<3.0.0  # Geometric operations
+neo4j>=5.14.0,<6.0.0  # Neo4j database driver
+geocoder>=1.38.1,<2.0.0  # Geocoding services
+requests>=2.31.0,<3.0.0  # HTTP requests
+geopy>=2.3.0,<3.0.0  # Geocoding and distance calculations
+
+# Visualization
+folium>=0.14.0,<0.15.0  # Interactive maps
+branca>=0.6.0,<0.7.0  # Map utilities
+
+# Utilities
+python-dotenv>=1.0.0,<2.0.0  # Environment variables
+rich>=13.5.2,<14.0.0  # Enhanced console output
+tqdm>=4.65.0,<5.0.0  # Progress bars
+loguru>=0.7.0,<0.8.0  # Advanced logging
+
+# Testing and Development
+typing-extensions>=4.5.0,<5.0.0  # Type hints
+pytest>=7.4.0,<8.0.0  # Testing framework
+black>=23.7.0,<24.0.0  # Code formatting
+pytest-cov>=4.1.0,<5.0.0  # Test coverage
+
+# Documentation
+sphinx>=6.2.1,<7.0.0  # Documentation generator
+sphinx-rtd-theme>=1.2.0,<2.0.0  # ReadTheDocs theme
