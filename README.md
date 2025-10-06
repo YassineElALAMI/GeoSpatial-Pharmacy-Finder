@@ -142,8 +142,8 @@ For detailed documentation:
 For any questions, issues, or feature requests:
 
 - Open an issue on GitHub
-- Email: [yassine.elalami5@usmba.ac.ma](mailto:yassine.elalami5@usmba.ac.ma)
-- GitHub: [YassineElALAMI](https://github.com/YassineElALAMI)
+- **Email**: yassine.elalami5@usmba.ac.ma
+- **GitHub**: [YassineElALAMI](https://github.com/YassineElALAMI)
 
 ---
 
